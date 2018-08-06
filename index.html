@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+	<!-- Headline -->
+	<div  class="container headline grid">
+		<img src="img/Test_logo.jpg" id="logo">
+		<div class="categories">
+			<img src="img/questions-circular-button.svg" alt="heart">
+			Categories</div>
+		<div class="search">
+			<input type="text" placeholder="Search your course...">
+		</div>
+		<div class="header_button">
+			<img src="img/heart.svg" alt="heart"><sup>02</sup>
+			<img src="img/shopping-cart.svg" alt="shopping-cart"><sup>02</sup>
+			<button id="instructor" class=" upper_case">Become an instructor</button>
+			<button class="sign">Sign in</button>
+			<button class="sign">Sign up</button>
+		</div>
+	</div>
+	<hr>
+	<!-- Headline end-->
+	<!-- Navbar -->
+	<nav class="navbar grid container">
+		<div class="active_btn">Home</div>
+		<div>Explore</div>
+		<div>Course</div>
+		<div>Partner</div>
+		<div>Event</div>
+		<div>Membership</div>
+		<div>Forum</div>
+		<div>Elements</div>
+		<div>Pages</div>
+	</nav>
+	<!-- Navbar end -->
+</header>
+<!-- Filter section -->
+<section class="container">
+	<div class="filers_headline grid">
+		<div class="upper_case">Active filter</div>
+		<div class="filter_result">Result: 980 matches</div>
+	</div>
+	<div class="default grid">
+		<div class="active_default">Default</div>
+		<div><img class="del_btn" src="img/delete-button.svg" alt="delete-button">Default</div>
+		<div><img class="del_btn" src="img/delete-button.svg" alt="delete-button">Default</div>
+		<div><img class="del_btn" src="img/delete-button.svg" alt="delete-button">Default</div>
+	</div>
+	<div class="filter grid">
+		<button class="filter_option" id="topics">
+			Topics
+		</button>		
+		<select class="filter_option" name="skill_level">
+		  <option type="checkbox" value="skill_level">Skill level</option>
+		  <option type="checkbox" value="skill_level">Skill level</option>
+		  <option type="checkbox" value="skill_level">Skill level</option>
+		</select>
+		<select class="filter_option" name="Course_languages">
+		  <option value="Course_languages">Course languages</option>
+		</select>
+		<select class="filter_option" name="Duration">
+		  <option value="Duration">Duration</option>
+		</select>
+		<select class="filter_option" name="something">
+		  <option value="something">Something</option>
+		</select>		
+		<select class="filter_option" name="Feature">
+		  <option value="Feature">Feature</option>
+		</select>		
+		<select class="filter_option" name="Collaboration">
+		  <option value="Collaboration">Collaboration</option>
+
+		</select>
+
+	</div>
+</section>
+<!-- Filter section end -->
+<!-- menu line -->
+<div class="container menu_line grid">
+	<div class="menu_line_text left">Course</div>
+	<div class="menu_line_text right">Sort by:</div>
+	<div>
+		<select class="filter_option menu_line" name="something">
+		  <option value="something">None</option>
+		</select>
+		<img class="menu_img" src="img/list.svg" alt="">
+		<img class="menu_img" src="img/menu.svg" alt="">
+	</div>
+</div>
+<!-- menu line end -->
+<!-- Images section -->
+<section class="container images grid">
+	<div class="grid image_block" id ='programing'>
+		<div class="main_img" style="background-image: url(img/1.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id = "mobile_app">
+		<div class="main_img" style="background-image: url(img/2.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id = "process">
+		<div class="main_img" style="background-image: url(img/3.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id = "mobile_app">
+		<div class="main_img" style="background-image: url(img/4.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id ='programing'>
+		<div class="main_img" style="background-image: url(img/1.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id = 'design'>
+		<div class="main_img" style="background-image: url(img/2.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id = "web_development">
+		<div class="main_img" style="background-image: url(img/3.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+	<div class="grid image_block" id = 'design'>
+		<div class="main_img" style="background-image: url(img/4.jpg);"></div>
+		<div class="button_img_right upper_case">Best seller</div>
+		<div class="button_img_bottom upper_case">Bundl</div>
+		<p class="img_text">Neutal Networks And For Deep Learning</p>
+		<div class="person">
+			<img src="img/person.jpg" alt="person" class="person_photo">
+			<div class="person_name">Antony Leath</div>
+	</div>
+		<div class="course_info">
+			<img class="img_heart" src="img/like.svg" alt="heart"><span>349</span>
+			<img class="img_users" src="img/users.svg" alt="users"><span>2678</span>
+			<span class="price">$100</span>
+		</div>
+	</div>
+
+</section>
+<footer>
+	<div class="container">
+		<div class=" grid footer">
+			<div class="fot_company_info grid">
+				<img src="img/Test_logo_dark.jpg" alt="">
+				<p>Education, Inc. <br> 3601 Seneca Street, New York City <br>NY 10010, USA</p>
+				<div class="social_logo">
+					<i class="fab fa-linkedin-in"></i>
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-google-plus-g"></i>
+					<i class="fab fa-youtube"></i>
+					<i class="fab fa-pinterest"></i>
+				</div>		
+			</div>
+			<div class="list grid">
+				<h2 class="list_menu fot_headlines">System</h2>
+				<h2 class="list_menu fot_headlines">More</h2>
+				<div class="list_menu">Help Center</div>
+				<div class="list_menu">About us</div>
+				<div class="list_menu active">Support forum</div>
+				<div class="list_menu">Blog</div>
+				<div class="list_menu">Affiliate</div>
+				<div class="list_menu">Service</div>
+				<div class="list_menu">Explore</div>
+				<div class="list_menu">Sign in</div>
+				<div class="list_menu">Pricing</div>
+				<div class="list_menu">Sign up</div>
+			</div>
+			<div class="get_in_touch">
+				<h2 class="fot_headlines">Get in touch</h2>
+				<div class="contact_info">Contact us if you need help with anything</div>
+				<div class="contacts">
+					<a href="tel:+012675286897">(+01) 2675 286897</a><br>	
+					<a href="tel:+012675286893">(+01) 2675 286893</a><br>	
+					<a href="mailto:help@rubikthemes.com">help@rubikthemes.com</a>
+				</div>
+			</div>
+		</div>
+
+	<div class="upper_case copirights">&copy; 2018 rubikthemes, all right <br> reserved</div>
+	</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

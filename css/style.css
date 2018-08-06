@@ -1,0 +1,698 @@
+/*General ----------------------*/
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
+  opacity: 1;
+  color: #4b5263;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.upper_case{
+	text-transform: uppercase;
+}
+
+.categories,
+.navbar> div,
+.header_button,
+#instructor,
+.sign,
+.default>div,
+.image_block,
+.social_logo>i,
+.list>div {
+	cursor: pointer;
+}
+
+
+.text-center {
+  text-align: center; 
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.grid {
+  display: grid; 
+}
+
+/*General end----------------------*/
+
+/*header ----------------------*/
+.grid.headline {
+  grid-template-columns: auto auto 280px 45%;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+hr{
+	border: solid 0.3px #d3d5de82;
+}
+.grid.navbar {
+	grid-template-columns: repeat(9, auto);
+	align-items: center;
+	text-transform: uppercase;
+	margin-top: 15px;
+	
+}
+.navbar> div{
+	transition: all 1s ease;
+}
+.navbar> div:hover {
+	color: #3fd0b0;
+	transform: scale(1.1);
+}
+
+.active_btn {
+	color: #3fd0b0;
+}
+
+#logo{
+	height: 50px;
+}
+
+input {
+	background-color: transparent;
+	background-image: url(../img/magnifying-glass.svg);
+	background-repeat: no-repeat;
+  background-position: 98% 50%;;
+  background-size: 13px;
+  border-radius: 3px;
+  border: solid 1px #d3d5de;
+  height: 25px;
+  width: 250px;
+  padding: 4px 15px;
+  font-size: 12px;
+
+}
+::placeholder {
+	color: #d3d5de;
+}
+.categories{
+	transition: all 0.5s linear;
+}
+.categories:hover{
+	transform: scale(1.2);
+	color:  #07d79b;
+}
+.categories, 
+button,
+.sign {
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-size: 1em;
+}
+
+.header_button {
+	justify-self: center;
+}
+.header_button > img,
+.categories > img {
+	height: 18px;
+	position: relative;
+	transition: transform 1s ease;
+}
+.header_button > img:hover {
+	-webkit-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+.header_button > img {
+	top: 5px;
+}
+#instructor {
+	background-color: #07d79b;
+	border: #07d79b;
+	height: 35px;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 12px;
+	-webkit-animation: pulsing 3s infinite;
+  animation: pulsing 3s infinite;
+}
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+}
+sup {
+	border-radius: 50px;
+	background-color: #daf9f0;
+	color: #3fd0b0;
+	padding: 3px;
+}
+.sign {
+	background: transparent;
+	border: none;
+}
+.sign:hover{
+	color: #3fd0b0;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #daf9f0;
+}
+.sign:nth-child(even){
+	border-right: solid 1px #d3d5de;
+}
+
+/*header end------------------------------------------------*/
+
+/*-------------------- Section filter ----------------------*/
+.filers_headline.grid {
+	grid-template-columns: auto auto;
+	margin-top: 35px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.filter_result{
+	font-size: 12px;
+	justify-self: right;
+	font-weight: normal;
+}
+.default.grid{
+	grid-template-columns: repeat(4, 100px);
+	margin: 10px 25px 25px 0px;
+}
+
+.default.grid>div{
+	transition: color 0.5s,border 0.5s ease;
+}
+
+.active_default,
+.default.grid>div:hover {
+	color: #3fd0b0;
+	border: solid 1px #3fd0b0;
+	border-radius: 12px;
+	width: 80px;
+	
+}
+.active_default{
+	text-align: center;
+}
+
+.del_btn{
+	height: 15px;
+	position: relative;
+	top: -1px;
+	margin-right: 3px;
+}
+.filter.grid {
+	grid-template-columns: repeat(4, 250px);
+	justify-content: space-between;
+	align-content: space-between;	
+}
+.filter_option {
+	appearance:none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	height: 30px;
+	border: solid 1px #d3d5de;	
+  border-radius: 3px;
+  font-size: 14px;
+  color: #7c7d7f;
+	background:url(../img/angle-arrow-down.svg);
+	background-repeat:no-repeat;
+	background-size:15px 16px;
+	background-position:98% 50% ;
+}
+.menu_line.grid{
+	grid-template-columns: 60% auto 180px;
+	margin-bottom: 55px;
+	margin-top: 20px;
+	height: 30px;
+}
+.menu_line_text.left{
+padding-left: 25px;
+}
+.menu_line_text{
+	padding-top: 15px;
+	font-size: 14px;
+}
+.menu_line_text.right{
+	text-align: right;
+}
+.filter_option.menu_line{
+	width: 80px;
+	background-size:10px 11px;
+	background-position:95% 50% ;;
+	margin: 8px 0px 5px 5px;
+	height: 30px;
+	padding-left: 5px;
+	align-self: center;
+}
+.menu_line * {
+	background-color: #fafafa;
+	color: #909090;
+	height: 45px; 
+}
+
+.menu_img{
+	float: right;
+  height: 25px;
+  width: 30px;
+  margin: 10px 5px 0px;
+}
+.popover_block {
+	background: white;
+	width: 225px;
+	display: inline-block;
+	position: relative;
+	bottom: 5px;
+
+}
+div.arrow {
+	left: 204px !important;
+}
+#topics >.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+    
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 22px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+    
+    border: solid 1px #d3d5de;
+    left: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+}
+
+.checkbox label.checked::before {
+	background-color: #3fd0b0;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    
+    transform: rotate(-45deg);
+    
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide the checkmark by default*/
+label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox label.checked::after {
+    content: "";
+}
+
+.input_checkboxes{
+	display: none;
+}
+.popover_block > p {
+	font-size: 18px;
+}
+.checkbox > span {
+	position: relative;
+	float: right;
+	color: #a4a6b1;
+}
+.popover.fade.show.bs-popover-bottom {
+	top: -10px !important;
+}
+#topics {
+	text-align: left;
+}
+
+/*-------------------- Section filter end----------------------*/
+
+/*------------------------ Images block --------------------*/
+
+.images.grid {
+	grid-template-columns: repeat(4, 250px);
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.image_block{
+	width: 250px;
+	box-shadow: 0px 0px 5px 4px rgba(224,217,224,0.88);
+	position: relative;
+	margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.main_img {
+	height: 170px;
+	width: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: -webkit-transform .25s ease;
+  transition: -webkit-transform .25s ease;
+  -o-transition: transform .25s ease;
+  transition: transform .25s ease;
+  transition: transform .25s ease,-webkit-transform .25s ease;
+  
+
+}
+.image_block:hover{
+	background-color:#f7f7f7
+}
+p.img_text:hover h4{
+	color:#293a43
+}
+.image_block:hover .main_img{
+	-webkit-transform:scale(1.05) translateY(-6.5px);
+	-ms-transform:scale(1.05) translateY(-6.5px);
+	transform:scale(1.05) translateY(-6.5px);
+}
+.button_img_right {
+	position: absolute;
+	transform: rotate(90deg);
+	top:42px;
+	right: -42px;
+	background-color: #07d79b;
+	color: #fff;
+	padding: 0 10px;
+}
+.button_img_bottom {
+	position: absolute;
+	top: 158px;
+	left:25px;
+	background-color: #ff9142;
+	color: #fff;
+	padding: 0 10px;
+	border-radius: 5px;
+}
+.img_text {
+	padding: 25px 25px 5px;
+	width: 250px;
+	color: #42495b;
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.person {
+	height: 50px;
+	position: relative;
+}
+.person_name {
+	display: inline-block;
+	width: 50px;
+	color: #949494;
+	font-size: 15px;
+	position: absolute;
+	left: 65px;
+}
+.person_photo {
+	width: 27px;
+	height: 27px;
+	border-radius: 35px;
+	margin-left: 25px;
+	display: inline-block;
+	position: absolute;
+	top:0;
+}
+.course_info {
+	height: 35px;
+	color: #949494;
+	font-size: 13px;
+	position: relative;
+}
+.img_heart,
+.img_users{
+	height: 15px;
+	width: 15px;
+	margin: 2px 5px;
+}
+.img_heart {
+	margin-left: 25px;
+}
+.price {
+	position: absolute;
+	right: 10px;
+	top: -6px;
+	font-size: 18px;
+	color: #07d79b;
+	letter-spacing: -2px;
+}
+
+/*------------------------ Images block end--------------------*/
+
+/*------------------------ footer block --------------------*/
+footer {
+	background: #343a48;
+	color: #939cb4;
+}
+.footer.grid {
+	grid-template-columns: 35% 45% 20%;
+
+}
+.footer.grid > div {
+	margin-top: 25px;
+}
+.list.grid {
+	grid-template-columns: auto auto;
+}
+.fot_company_info > img{
+	height: 55px;
+	margin-bottom: 10px;
+}
+
+.social_logo>i {
+	background-color: #434956;
+	border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  padding: 7px 8px;
+  font-size: 10px;
+}
+.social_logo>i:hover {
+	color: #fff;
+}
+
+.list_menu,
+.contact_info,
+.fot_company_info > p,
+.contacts  {
+	font-size: 14px;
+}
+.contacts > a {
+	color: #fff;
+	font-size: 	12px;
+}
+.copirights {
+	border-top: 1px solid #444956;
+	text-align: center;
+	margin-top: 37px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 11px;
+}
+.fot_headlines {
+	font-size: 1.5rem;
+  color: #fff;
+  font-weight: normal;
+}
+.list_menu.active {
+	color: #07d79b;
+}
+
+	
+div.list_menu:hover {
+	color: #07d79b;
+}
+
+/*------------------------ footer block end--------------------*/
+
+/*------------------------ Media queries --------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .container {
+  	width: 90%; 
+	}
+	input {
+		width: 200px;
+	}
+	.grid.headline {
+	  grid-template-columns: auto auto 220px 45%;
+	}
+	.filter.grid {
+		grid-template-columns: repeat(4, 200px);
+	}
+	.images.grid {
+		grid-template-columns: repeat(4, 220px);
+	}
+	.image_block{
+		width: 220px;
+	}
+	.main_img {
+		width: 220px;
+	}
+	.course_info{
+		width: 220px;
+	}
+}
+@media only screen and (max-width: 992px) {
+  .container {
+  	max-width: 90% !important;
+	}
+	input {
+		width: 150px;
+	}
+	.grid.headline {
+	  grid-template-columns: auto auto 160px 50%;
+	}
+	#instructor {
+		width: 120px;
+		font-size: 10px;
+		padding: 2px;
+	}
+	#logo {
+		height: 30px;
+	}
+	.sign,
+	.categories{
+		font-size: 12px;
+	}
+	.header_button > img,
+	.categories > img {
+		height: 16px;
+		top: 0;
+	}
+	sup{
+		top: -1em !important;
+		padding: 2px 4px;
+		font-size: 8px !important;
+	}
+	.navbar {
+		font-size: 14px;
+	}
+	.default {
+		font-size: 12px;
+	}
+	.del_btn{
+		height: 12px;
+		top: -1px;
+	}
+	.filter.grid {
+		grid-template-columns: repeat(4, 160px);
+		align-items: center;
+	}
+	.menu_line *{
+		height: 30px;
+		padding-top: 2px;
+	}
+
+	.menu_img {
+		height: 16px !important;
+		float: right;
+		margin-top: 2px;
+	}
+	.menu_line.grid {
+		grid-template-columns: 60% auto 180px;
+	}
+	
+	.filter_option.menu_line {
+		margin: 0px 0px 5px 35px;
+		height: 22px;
+		padding: 0px;
+		align-self: center;
+	}
+	.images.grid {
+		grid-template-columns: repeat(3, 220px);
+	}
+
+}
+@media only screen and (max-width: 780px) {
+	.container {
+  	max-width: 95% !important; 
+	}
+	.sign,
+	.categories{
+		font-size: 10px;
+	}
+	.grid.headline {
+	  grid-template-columns: auto auto 160px 45%;
+	  padding-bottom: 0px;
+	}
+	#instructor {
+		width: 90px;
+		font-size: 5px;
+		padding: 2px;
+	}
+	input{
+		padding: 4px 5px;
+		font-size: 10px !important;
+	}
+	.filers_headline.grid{
+		margin-top: 15px;
+	}
+	.filter.grid {
+		grid-template-columns: repeat(3, 180px);
+	}
+	.images.grid {
+		grid-template-columns: repeat(2, 250px);
+		justify-content: space-around;
+	}
+	.image_block{
+		width: 250px;
+	}
+	.main_img {
+		width: 250px;
+	}
+	.course_info{
+		width: 250px;
+	}
+}
